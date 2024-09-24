@@ -11,14 +11,18 @@
 
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Home Page - Felipe Lima</title>
+  <script src="./scripts/course_list.js" defer></script>
+  <script src="./scripts/getDate.js"></script>
+  <script src="./scripts/responsiveMenu.js"></script>
 </head>
 <body>
+  <button id="menu"></button>
   <header>
     <div>
       <img src="https://avatars.githubusercontent.com/u/63979005?v=4" alt="">
       <h1>Felipe Lima </h1>
     </div>
-    <nav>
+    <nav class="navigation">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Chamber</a></li>
@@ -29,26 +33,52 @@
   </header>
 
   <main>
-    <section class="card">
-      <h2>Course work</h2>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </section>
+    <section>
+      <div class="card">
+        <div>
+          <h2>Course work</h2>
+          <ul>
+            <li>W01</li>
+            <li>W02</li>
+            <li>W03</li>
+          </ul>
+        </div>
+      </div>
+    
 
-    <section class="card">
-      <h2>Course work</h2>
-    </section>
-    <section class="card">
-      <h2>Course work</h2>
+    
+      <div class="card">
+        <div>
+          <h2>Fortaleza, Ceará</h2>
+          <img src="./images/fortaleza-ceara.webp" alt="Image from Fortaleza beach">
+          <p>Nautico Beach</p>
+        </div>
+      </div>
+    
+    
+      <div  id="certificate-courses" class="card">
+        <div id="web-letter">
+          <h2>Web and Computer Programming Certificate</h2>
+          <nav id="filtering" class="card-header">
+            <a id="all" href="#">All</a>
+            <a id="cse" href="#">CSE</a>
+            <a id="wdd" href="#">WDD</a>
+          </nav>
+
+          <div class="courses-links">
+            <div id="courses"></div>
+            <div id="totalCredits"></div>
+          </div>
+        </div>
+      </div>
+
     </section>
   </main>
   
   <footer>
-
+    <p>©<span id="year"></span> Felipe Lima 👏 Brazil</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
   </footer>
-  
+
 </body>
 </html>
