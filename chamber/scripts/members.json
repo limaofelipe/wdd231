@@ -1,0 +1,65 @@
+[
+  {
+      "name": "Coca-Cola Co.",
+      "address": "Atlanta, Georgia, USA",
+      "phone": "555-555-5555",
+      "website": "https://www.coca-cola.com/",
+      "image": "./images/coca-cola-logo.png",
+      "level": 1,
+      "other": "Coca-Cola plays a major role in the local and global economy."
+  },
+  {
+      "name": "Toyota",
+      "address": "Koraku, Bunkyo-ku, Tokyo 112-8701, Japan",
+      "phone": "555-555-5555",
+      "website": "https://www.toyota.com/",
+      "image": "./images/toyota-logo.png",
+      "level": 2,
+      "other": "Toyota Motor Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi Prefecture, Japan."
+  },
+  {
+      "name": "Adidas",
+      "address": "Herzogenaurach (Germany)",
+      "phone": "555-555-5555",
+      "website": "https://www.adidas.com/",
+      "image": "./images/adidas-logo.svg",
+      "level": 3,
+      "other": "Adidas is a footwear, sportswear, and sports equipment company founded in Germany."
+  },
+  {
+      "name": "Nike",
+      "address": "One Bowerman Drive, Beaverton, OR 97005, United States",
+      "phone": "555-555-5555",
+      "website": "https://www.nike.com/",
+      "image": "./images/nike-logo.png",
+      "level": 1,
+      "other": "Nike is an American company specializing in footwear, apparel, and accessories, founded in 1972 by Bill Bowerman and Philip Knight."
+  },
+  {
+      "name": "AMD",
+      "address": "9811 Katy Fwy #1060, Houston, TX 77024",
+      "phone": "555-555-5555",
+      "website": "https://www.amd.com",
+      "image": "./images/amd-logo.webp",
+      "level": 2,
+      "other": "Advanced Micro Devices, Inc. is an American company that manufactures integrated circuits, particularly processors and graphics cards."
+  },
+  {
+      "name": "Apple",
+      "address": "One Apple Park Way, Cupertino, CA 95014",
+      "phone": "555-555-5555",
+      "website": "https://www.apple.com/",
+      "image": "./images/apple-logo.png",
+      "level": 3,
+      "other": "Apple is a North American multinational company with the goal of designing and marketing consumer electronics, computer software, and personal computers."
+  },
+  {
+      "name": "Nvidia",
+      "address": "788 San Tomas Expressway Santa Clara, CA 95051",
+      "phone": "555-555-5555",
+      "website": "https://www.nvidia.com/",
+      "image": "./images/nvidia-logo.jpg",
+      "level": 1,
+      "other": "Nvidia Corporation, stylized as NVIDIA or, due to its logo, nVIDIA, is a multinational technology company incorporated in Delaware and headquartered in Santa Clara, California."
+  }
+]

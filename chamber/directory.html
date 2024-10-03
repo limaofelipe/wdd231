@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Hub Commerce is a business chamber">
+    <meta name="keywords"
+        content="business chamber, Hub Commerce, uca, chamber of commerce, chamber of commerce">
+    <meta name="author" content="Felipe Lima">
+    <meta name="og:description"
+        content="Hub Commerce is a business chamber">
+    <meta property="og:title" content="Hub Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/logo.png">
+    
+
+    <meta name="twitter:card"
+        content="Hub Commerce is a business chamber" />
+    <meta name="twitter:site" content="https://www.twitter.com" />
+    <meta name="twitter:title" content="Hub Commerce" />
+    <meta name="twitter:description"
+        content="Hub Commerce is a business chamber" />
+    <meta name="twitter:image" content="./images/logo.png" />
+
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="stylesheet" href="./styles/directory.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/directory.js" defer></script>
+
+    <title>Hub Commerce</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Hub Commerce</h1>
+        </div>
+        <button id="menu" aria-label="Menu" aria-expanded="false" aria-controls="navigation">☰</button>
+        <nav id="navigation" class="collapsed" aria-hidden="true">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Companies Directory</h2>
+        <p class="paragraph">The Hub commerce brings together companies from various sectors on a single platform, offering a practical and accessible experience for users. Its goal is to simplify the search for information and services, allowing visitors to quickly find the companies that meet their needs. Each company has a dedicated page with details such as name, industry, location, and contact information, all organized in a clear and user-friendly manner. Additionally, the platform features advanced search tools and filters, making the search process even more efficient. With customer reviews and comments, the site fosters an interactive and trustworthy community, effectively connecting businesses and consumers. The interface is responsive and intuitive, ensuring smooth navigation on any device. In this way, the website serves as a digital meeting point, centralizing options and streamlining the discovery and selection process.
+        </p>
+        <p class="paragraph">
+            Below is a lis of companies:
+        </p>
+
+        <div id="view-options">
+            <button id="grid-view"class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor"
+                    class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+                    <path
+                        d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z" />
+                </svg>
+            </button>
+            <button id="list-view">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor"
+                    class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>
+            </button>
+        </div>
+
+
+        <div id="business" class="grid">
+          <div class="company empty"></div>
+          <div class="company empty"></div>
+          <div class="company empty"></div>
+          <div class="company empty"></div>
+          <div class="company empty"></div>
+          <div class="company empty"></div>
+          <div class="company empty"></div>
+      </div>
+    </main>
+    <footer>
+        <div id="address-contact">
+            <p><strong>Hub Commerce</strong></p>
+            <p>Fortaleza - CE</p>
+            <p>Email: <a href="mailto:contact@hubcommerce.com">contact@hubcommerce.com</a></p>
+        </div>
+
+        <div id="legal">
+          <div id="social-media">
+            <a href="#" target="_blank" ><img src="./images/facebook-icon.svg" alt="Facebook"
+                    loading="lazy" width="35" height="35"></a>
+            <a href="#" target="_blank" ><img src="./images/x-icon.svg" alt="X" loading="lazy"
+                    width="35" height="35"></a>
+            <a href="#" target="_blank" ><img src="./images/instagram-icon.svg" alt="Instagram"
+                    loading="lazy" width="35" height="35"></a>
+        </div>
+            <p>&copy; <span id="currentYear"></span> Hub Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

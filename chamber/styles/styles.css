@@ -1,0 +1,89 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    padding: 0 0.5rem;
+}
+
+header {
+    display: grid;
+    grid-template: auto / auto auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--soft-blue);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#logo h1 {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+
+button#menu {
+    background: transparent;
+    color: var(--soft-blue);
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: max-height 0.2s ease-in, opacity 0.2s ease-in;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    grid-column: 1 / -1;
+}
+
+nav a {
+    color: var(--soft-blue);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:first-child {
+    padding-top: 20px;
+}
+
+nav a:hover {
+    color: var(--green);
+}
+
+nav a.active {
+    background-color: var(--black);
+    cursor: default;
+}
+
+
+nav.expanded {
+    max-height: 300px;
+    opacity: 1;
+}
+
+nav.collapsed {
+    max-height: 0;
+    opacity: 0;
+}
+
+footer {    
+    padding: 1rem;
+}
+
+
+#social-media img {
+    margin-inline: 0.5rem;
+}
