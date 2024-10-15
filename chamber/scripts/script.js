@@ -48,3 +48,4 @@ function handleMenuClick() {
 
     menu.textContent = isExpanded ? "☰" : "✖";
 }
+

@@ -1,0 +1,194 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  padding: 0 0.5rem;
+}
+
+
+header {
+  display: grid;
+  grid-template: auto / auto auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--soft-blue);
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+#logo h1 {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+
+button#menu {
+  background: transparent;
+  color: var(--soft-blue);
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: max-height 0.2s ease-in, opacity 0.2s ease-in;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  grid-column: 1 / -1;
+}
+
+nav a {
+  color: var(--soft-blue);
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:first-child {
+  padding-top: 20px;
+}
+
+nav a:hover {
+  color: var(--green);
+}
+
+nav a.active {
+  background-color: var(--black);
+  cursor: default;
+}
+
+
+nav.expanded {
+  max-height: 300px;
+  opacity: 1;
+}
+
+nav.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+
+.hero {
+  height: 50rem;
+  background-image: url(../images/fortaleza.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.content-hero {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem ;
+  color: var(--soft-blue);
+  background-color: rgba(0, 0, 0, 0.501);
+  height: 100%;
+  
+  padding-inline: 1rem
+}
+
+.join {
+  background-color: var(--green);
+  font-size: 2rem;
+  font-weight: bold;    
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: var(--black);
+  transition: 0.2s;
+}
+
+.join:hover {
+  background-color: var(--black);
+  color: var(--green);
+}
+
+.title {
+    font-size: 2rem;
+    border-bottom: 3px solid var(--Secondary-Color);
+    margin-bottom: 5rem;
+}
+
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home {
+    margin-bottom: 5rem;
+}
+
+
+
+.home-title {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 14%);
+    border-radius: .5rem;
+    margin-bottom: 2.5rem;
+}
+ 
+
+.home-title h3 {
+    background-color: var(--black);
+    color: white;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+.home-title ul{
+  list-style: none
+}
+
+.upcoming-events {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2.5rem 3rem;
+}
+
+#advertising {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+
+}
+
+
+.ads {
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+footer {    
+  padding: 1rem;
+}
+
+
+#social-media img {
+  margin-inline: 0.5rem;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Hub Commerce is a business chamber">
+  <meta name="keywords" content="business chamber, Hub Commerce, uca, chamber of commerce, chamber of commerce">
+  <meta name="author" content="Felipe Lima">
+  <meta name="og:description" content="Hub Commerce is a business chamber">
+  <meta property="og:title" content="Hub Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./images/logo.svg">
+  <meta name="twitter:card" content="Hub Commerce is a business chamber" />
+  <meta name="twitter:site" content="https://www.twitter.com" />
+  <meta name="twitter:title" content="Hub Commerce" />
+  <meta name="twitter:description" content="Hub Commerce is a business chamber" />
+  <meta name="twitter:image" content="./images/logo.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/directory.css">
+  
+  <link rel="stylesheet" href="./styles/chamber-mobile.css">
+  <link rel="stylesheet" href="./styles/chamber-large.css">
+
+  <script src="./scripts/script.js" defer></script>
+  <script src="./scripts/chamber.js" defer></script>
+
+  <title>Hub Commerce - Home</title>
+</head>
+<body>
+  <header>
+    <div id="logo">
+        <h1>Hub Commerce</h1>
+    </div>
+    <button id="menu" aria-label="Menu" aria-expanded="false" aria-controls="navigation">☰</button>
+    <nav id="navigation" class="collapsed" aria-hidden="true">
+        <a href="#">Home</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+        <a href="#">Discover</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+  <div class="content-hero">
+      <h2 class="fade-animation hero-phrase">Discover a whole new way to make business</h2>
+
+      <a href="#" class="join fade-animation">Join Us</a>
+  </div>
+</section>
+
+<main class="container">
+  <h2 class="title">Home</h2>
+
+  <section class="home">
+    <article  class="home-title">
+      <h3>Events</h3>
+      <ul class="upcoming-events">
+        <li>Chamber of Commerce for Tech</li>
+        <li>Chamber of Commerce for international commerce</li>
+        <li>Chamber of Commerce for start Your own business</li>
+      </ul>
+    </article>
+
+    <article class="home-title">
+      <h3>Current Weather</h3>
+
+      <div class="weather-display">
+          <div id="weather-info">
+
+          </div>
+      </div>
+
+    </article>
+
+  <article class="home-title">
+    <h3>Weather Forecast</h3>
+    <ul id="forecast-weather-info">
+
+    </ul>
+  </article>
+
+  </section>
+
+  <h2 class="title">About us!</h2>
+  <section id="advertising">
+      
+  </section>
+</main>
+  <footer>
+    <div id="address-contact">
+        <p><strong>Hub Commerce</strong></p>
+        <p>Fortaleza - CE</p>
+        <p>Email: <a href="mailto:contact@hubcommerce.com">contact@hubcommerce.com</a></p>
+    </div>
+
+    <div id="legal">
+      <div id="social-media">
+        <a href="#" target="_blank" ><img src="./images/facebook-icon.svg" alt="Facebook"
+                loading="lazy" width="35" height="35"></a>
+        <a href="#" target="_blank" ><img src="./images/x-icon.svg" alt="X" loading="lazy"
+                width="35" height="35"></a>
+        <a href="#" target="_blank" ><img src="./images/instagram-icon.svg" alt="Instagram"
+                loading="lazy" width="35" height="35"></a>
+    </div>
+        <p>&copy; <span id="currentYear"></span> Hub Commerce</p>
+        <p><span id="lastModified"></span></p>
+    </div>
+</footer>
+</body>
+</html>
