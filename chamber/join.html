@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Hub Commerce is a business chamber">
+  <meta name="keywords" content="business chamber, Hub Commerce, uca, chamber of commerce, chamber of commerce">
+  <meta name="author" content="Felipe Lima">
+  <meta name="og:description" content="Hub Commerce is a business chamber">
+  <meta property="og:title" content="Hub Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./images/logo.svg">
+  <meta name="twitter:card" content="Hub Commerce is a business chamber" />
+  <meta name="twitter:site" content="https://www.twitter.com" />
+  <meta name="twitter:title" content="Hub Commerce" />
+  <meta name="twitter:description" content="Hub Commerce is a business chamber" />
+  <meta name="twitter:image" content="./images/logo.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/directory.css">
+  
+  <link rel="stylesheet" href="./styles/chamber-mobile.css">
+  <link rel="stylesheet" href="./styles/chamber-large.css">
+
+  <link rel="stylesheet" href="./styles/join.css">
+
+  
+  <script src="./scripts/module.mjs" type="module"></script>
+  <script src="./scripts/join.js" type="module"></script>
+  <script src="./scripts/thanks.js" ></script>
+  <script src="./scripts/script.js" defer></script>
+  <script src="./scripts/chamber.js" defer></script>
+
+  <title>Hub Commerce - Home</title>
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <a href="./index.html">
+        <img src="./images/logo.svg">
+      </a>
+      <h1>Hub Commerce</h1>
+    </div>
+    <button id="menu" aria-label="Menu" aria-expanded="false" aria-controls="navigation">☰</button>
+    <nav id="navigation" class="collapsed" aria-hidden="true">
+        <a href="../index.html">Home</a>
+        <a href="./directory.html">Directory</a>
+        <a href="./join.html">Join</a>
+        <a href="#">Discover</a>
+    </nav>
+</header>
+  
+<main>
+  <section>
+    <h1>Join us</h1>
+    <p>The Hub Commerce unites businesses from different industries on one platform, providing users with a convenient and accessible experience. It aims to streamline the search for services and information, enabling visitors to easily locate companies that suit their needs. Every business has its own page featuring essential details like name, sector, location, and contact information, all presented in a straightforward and intuitive format.</p>
+  </section>
+  
+
+  <div id="membership-cards">
+    <h2>The Hub plans</h2>
+    <p class="sub-heading">Each membership tier provides unique benefits and services. Click the "See More" button to explore the details of each tier.</p>
+    <div id="cards">
+        <div class="card" id="card-np" data-dialog="modal-np">
+            <h3>Free</h3>
+            <p class="modal-trigger">See More</p>
+        </div>
+        <div class="card" id="card-bronze" data-dialog="modal-bronze">
+            <h3>Bronze</h3>
+            <p class="modal-trigger">See More</p>
+        </div>
+        <div class="card" id="card-silver" data-dialog="modal-silver">
+            <h3>Silver</h3>
+            <p class="modal-trigger">See More</p>
+        </div>
+        <div class="card" id="card-gold" data-dialog="modal-gold">
+            <h3>Gold</h3>
+            <p class="modal-trigger">See More</p>
+        </div>
+    </div>
+  </div>
+
+  <div id="join-form">
+    <h2>Become a Member</h2>
+    <form action="thankyou.html" method="get">
+        <p>Complete the form below to join the Unity Commerce Alliance as a member.</p>
+        <label for="firstName">First Name:
+            <input type="text" id="firstName" name="firstName" title="Enter your first name"
+                  autocomplete="given-name" required>
+        </label>
+        <br>
+        <label for="lastName">Last Name:
+            <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name"
+                  required>
+        </label>
+        <br>
+        <label for="organizationTitle">Organizational Title:
+            <input type="text" id="organizationTitle" name="organizationTitle"
+                  title="Enter your organizational title" autocomplete="organization-title"
+                  pattern="[a-zA-Z-\s]{7,}">
+        </label>
+        <br>
+        <label for="email">Email:
+            <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
+                  placeholder="example@domain.com" required>
+        </label>
+        <br>
+        <label for="mobile">Mobile Phone:
+            <input type="tel" id="mobile" name="mobile" title="Enter your mobile phone number" autocomplete="tel"
+                  required>
+        </label>
+        <br>
+        <label for="organization">Business/Organization Name:
+            <input type="text" id="organization" name="organization" title="Enter your business/organization name"
+                  autocomplete="organization" required>
+        </label>
+        <br>
+        <label for="membership">Membership Level:
+            <select id="membership" name="membership" title="Select membership level" required>
+                <option value="" selected disabled>Select Membership Level</option>
+                <option value="Free">Free Membership</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+        </label>
+        <br>
+        <label for="description"> Description:
+            <textarea id="description" name="description" title="Describe your business/organization"></textarea>
+        </label>
+        <br>
+        <input type="hidden" id="timestamp" name="timestamp" value="">
+
+        <label>
+            <input type="submit" value="Submit">
+        </label>
+    </form>
+  </div>
+
+  <dialog id="modal-np">
+    <h3>NP Membership Benefits</h3>
+    <p>The Non-Profit (NP) Membership is tailored for organizations dedicated to community service and non-profit efforts. Joining at this level provides you with:</p>
+    <ul>
+        <li>Feature your organization in our directory to reach a broader audience and potential supporters</li>
+        <li>Connect with like-minded organizations and industry leaders through exclusive events and webinars</li>
+        <li>Receive tools, templates, and educational materials to support your mission and operations.</li>
+        <li>Benefit from special rates on consulting, marketing, and software solutions tailored for non-profits</li>
+    </ul>
+    <p>Make a difference while connecting with businesses that share your values!</p>
+    <button class="modal-close">Close</button>
+  </dialog>
+
+  <dialog id="modal-bronze">
+    <h3>Bronze Membership Benefits</h3>
+    <p>The Bronze Membership provides small businesses and startups with opportunities for growth and increased visibility. This membership offers:</p>
+    <ul>
+        <li>Showcase your company in our directory to attract potential customers and partners.</li>
+        <li>Gain access to promotional tools and resources to boost your brand visibility.</li>
+        <li>Participate in member-exclusive events to connect with other businesses and industry experts.</li>
+        <li>Enjoy reduced rates on ads across our platform to enhance your outreach.</li>
+    </ul>
+    <p>Perfect for businesses just getting started and looking to make a mark.</p>
+    <button class="modal-close">Close</button>
+  </dialog>
+
+  <dialog id="modal-silver">
+    <h3>Silver Membership Benefits</h3>
+    <p>
+      The Silver Membership is designed for established businesses seeking advanced support and services. This membership provides:</p>
+    <ul>
+        <li>Receive dedicated assistance from our support team to address your business needs promptly.</li>
+        <li>Access sophisticated marketing resources and analytics to enhance your outreach efforts.</li>
+        <li>Engage in partnerships and collaborations with other members to expand your network.</li>
+        <li>Attend members-only workshops and training sessions to develop skills and industry knowledge.</li>
+    </ul>
+    <p>Ideal for businesses looking to expand their reach and strengthen their local presence.</p>
+    <button class="modal-close">Close</button>
+  </dialog>
+
+  <dialog id="modal-gold">
+    <h3>Gold Membership Benefits</h3>
+    <p>The Gold Membership is our top-tier option, crafted for industry leaders and large organizations. This membership provides:</p>
+    <ul>
+        <li>Attend VIP networking events and conferences featuring industry experts and thought leaders.</li>
+        <li>Enjoy personalized assistance and consulting tailored to your organization's specific needs.</li>
+        <li>Increase your visibility through featured placements and sponsorship options across our platform.</li>
+        <li>Receive comprehensive industry reports and data analysis to inform your strategic decisions.</li>
+    </ul>
+    <p>This membership tier is ideal for businesses aiming to assume a leadership position in the local commerce community.</p>
+    <button class="modal-close">Close</button>
+  </dialog>
+
+
+  
+
+</main>
+
+<footer>
+  <div id="address-contact">
+      <p><strong>Hub Commerce</strong></p>
+      <p>Fortaleza - CE</p>
+      <p>Email: <a href="mailto:contact@hubcommerce.com">contact@hubcommerce.com</a></p>
+  </div>
+
+  <div id="legal">
+    <div id="social-media">
+      <a href="#" target="_blank" ><img src="./images/facebook-icon.svg" alt="Facebook"
+              loading="lazy" width="35" height="35"></a>
+      <a href="#" target="_blank" ><img src="./images/x-icon.svg" alt="X" loading="lazy"
+              width="35" height="35"></a>
+      <a href="#" target="_blank" ><img src="./images/instagram-icon.svg" alt="Instagram"
+              loading="lazy" width="35" height="35"></a>
+  </div>
+      <p>&copy; <span id="currentYear"></span> Hub Commerce</p>
+      <p><span id="lastModified"></span></p>
+  </div>
+</footer>
+</body>
+</html>

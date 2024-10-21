@@ -1,0 +1,302 @@
+:root {
+  --silver: #1e3a8a;
+  --bronze: #1d4ed8 ;
+  --np: #3b82f6;
+  --gold: #1e1b4b;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+main > div {
+  width: 100%;
+border-radius: 10px;
+}
+
+/* ================================================
+ Section: Join Intro and Membership Titles
+ ================================================ */
+#join-intro h1 {
+  border-bottom: 1px solid var(--gray-border);
+  margin-inline: 1rem;
+}
+
+#membership-cards > h2,
+#join-form > h2 {
+  background: var(--accent-color);
+  border-radius: 10px 10px 0 0;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* ================================================
+ Section: Join Form
+ ================================================ */
+#join-form > form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#join-form form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#join-form form input,
+#join-form form select,
+#join-form form textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-border);
+}
+
+/* Form Input Styles */
+#join-form form input[required]:invalid,
+#join-form form select[required]:invalid {
+  border-left: 8px solid var(--blue);
+}
+
+#join-form form textarea {
+  height: 5rem;
+}
+
+/* Submit Button Styles */
+#join-form form input[type="submit"] {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--blue);
+  background: var(--white);
+  color: var(--blue);
+  transition: background 0.3s;
+}
+
+/* Submit Button Hover and Active States */
+#join-form form input[type="submit"]:hover {
+  background: var(--blue);
+  color: white;
+}
+
+#join-form form input[type="submit"]:active {
+  background: var(--black);
+  color: white;
+}
+
+/* ================================================
+ Section: Cards
+ ================================================ */
+#cards {
+  padding: 0 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: stretch;
+}
+
+/* Card Styles */
+.card {
+  box-shadow: 0 0 10px var(--black-shadow);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transform: translateY(20px); /* Set the initial position */
+  opacity: 0; /* Set the initial opacity */
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+
+/* Card Text Styles */
+.card > h3,
+.card > p {
+  margin: 0;
+}
+
+.card > p {
+  text-align: right;
+  background: none;
+  border: none;
+}
+
+.card > p:before {
+  content: "> ";
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* ================================================
+ Special Card Styles
+ ================================================ */
+#card-silver {
+  background: var(--silver);
+  color: white;
+}
+
+#card-bronze {
+  background: var(--bronze);
+  color: white;
+}
+
+#card-np {
+  background: var(--np);
+  color: white;
+}
+
+#card-gold {
+  background: var(--gold);
+  color: white;
+}
+
+/* ================================================
+ Animation for Card Display
+ ================================================ */
+
+/* Fade-in and slide up animation */
+@keyframes fadeSlideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Delay each card animation slightly */
+#card-silver {
+  animation-delay: 0.4s;
+}
+
+#card-bronze {
+  animation-delay: 0.6s;
+}
+
+#card-np {
+  animation-delay: 0.8s;
+}
+
+#card-gold {
+  animation-delay: 0.2s;
+}
+
+/* ================================================
+ Responsive Design: Media Queries
+ ================================================ */
+/* Greater than 500px */
+@media (min-width: 500px) {
+  #cards {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Greater than 800px */
+@media (min-width: 800px) {
+  main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+      justify-items: center;
+      max-width: 1200px;
+      margin: auto;
+  }
+
+  main section {
+      max-width: 900px;
+      grid-row: 1/2;
+      text-align: left;
+  }
+
+  #join-form {
+      grid-row: 2/7;
+      grid-column: 1/2;
+  }
+
+  #membership-cards {
+      grid-row: 2/5;
+      grid-column: 2/3;
+  }
+
+  #membership-cards .sub-heading {
+      margin: 1rem;
+  }
+
+  #cards {
+      grid-template-columns: 1fr;
+  }
+
+  .card:hover {
+      transform: scale(1.02);
+  }
+}
+
+/* ================================================
+ Dialog Styles
+ ================================================ */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+dialog {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 10px var(--black-shadow);
+  padding: 1rem;
+  max-width: 500px;
+}
+
+dialog > h3 {
+  margin: 0;
+}
+
+dialog > button {
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent-color);
+  color: var(--blue);
+  background-color: white;
+  transition: background 0.3s;
+}
+
+dialog > button:hover {
+  background: var(--bg-primary);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+/* Modal Background Styles */
+#modal-np {
+  background: var(--np);
+  color: white;
+}
+
+#modal-np > h3 {
+  color: white;
+}
+
+#modal-bronze {
+  background: var(--bronze);
+  color: white;
+}
+
+#modal-silver {
+  background: var(--silver);
+    color: white;
+}
+
+#modal-gold {
+  background: var(--gold);
+    color: white;
+}
