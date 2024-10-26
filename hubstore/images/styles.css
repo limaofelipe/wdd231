@@ -1,0 +1,136 @@
+/* ================================================
+   CSS Variables
+   ================================================ */
+   :root {
+  --blue: #003CFE;
+  --soft-blue: #E5F3FF;
+  --black: #000C33;
+  --green: #00CC73;
+  }
+
+/* ================================================
+   Global Styles
+   ================================================ */
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Body typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--soft-blue);
+}
+
+/* Headings typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'STIX Two Text', serif;
+    color: var(--black);
+    font-weight: 500;
+}
+
+header {
+  display: grid;
+  grid-template: auto / auto auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--soft-blue);
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+#logo h1 {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+
+button#menu {
+  background: transparent;
+  color: var(--soft-blue);
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: max-height 0.2s ease-in, opacity 0.2s ease-in;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  grid-column: 1 / -1;
+}
+
+nav a {
+  color: var(--soft-blue);
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:first-child {
+  padding-top: 20px;
+}
+
+nav a:hover {
+  color: var(--green);
+}
+
+nav a.active {
+  background-color: var(--black);
+  cursor: default;
+}
+
+
+nav.expanded {
+  max-height: 300px;
+  opacity: 1;
+}
+
+nav.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* ================================================
+   Footer Styles
+   ================================================ */
+   footer {
+    background-color: var(--black);
+    color: var(--soft-blue);
+    padding: 1rem;  
+  }
+
+  footer a{
+    color: var(--soft-blue);
+  }
+
+/* ================================================
+   Action Buttons Styles
+   ================================================ */
+/*This action buttons stay fixed at the bottom of the page*/
+#action-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    z-index: 999;
+    border-top: 1px solid rgba(128, 128, 128, 0.24);
+}
