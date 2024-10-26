@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Hub Commerce is a business chamber">
+  <meta name="keywords" content="business chamber, Hub Commerce, uca, chamber of commerce, chamber of commerce">
+  <meta name="author" content="Felipe Lima">
+  <meta name="og:description" content="Hub Commerce is a business chamber">
+  <meta property="og:title" content="Hub Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./images/logo.svg">
+  <meta name="twitter:card" content="Hub Commerce is a business chamber" />
+  <meta name="twitter:site" content="https://www.twitter.com" />
+  <meta name="twitter:title" content="Hub Commerce" />
+  <meta name="twitter:description" content="Hub Commerce is a business chamber" />
+  <meta name="twitter:image" content="./images/logo.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/directory.css">
+  
+  <link rel="stylesheet" href="./styles/chamber-mobile.css">
+  <link rel="stylesheet" href="./styles/chamber-large.css">
+  <link rel="stylesheet" href="./styles/discover.css">
+  <link rel="stylesheet" href="./styles/discover-large.css">
+  
+    
+  <script src="./scripts/script.js" defer></script>
+  <script src="./scripts/chamber.js" defer></script>
+
+  <title>Hub Commerce - Discover</title>
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <a href="./index.html">
+        <img src="./images/logo.svg">
+      </a>
+      <h1>Hub Commerce</h1>
+    </div>
+    <button id="menu" aria-label="Menu" aria-expanded="false" aria-controls="navigation">☰</button>
+    <nav id="navigation" class="collapsed" aria-hidden="true">
+        <a href="../index.html">Home</a>
+        <a href="./directory.html">Directory</a>
+        <a href="./join.html">Join</a>
+        <a href="#">Discover</a>
+    </nav>
+</header>
+
+<main id="discover">
+  <h2 id="welcome-message">Welcome to Hub Commerce Discover Page</h2>
+  <aside class="main-cards">
+      
+      <div class="card">
+          <div class="card-header">
+              <h2>Fortaleza's Economy</h2>
+          </div>
+          <div class="card-body">
+              <img src="./images/fortaleza.webp" alt="Iracema Beach Fortaleza" loading="lazy" width="350"
+                   height="233">
+              <p>
+                  Fortaleza's economy thrives on tourism, commerce, and industry.
+                  Key sectors include textile production, food processing, and technology.
+                  Its strategic coastal location also supports a growing port economy, boosting exports and imports,
+                  while tourism drives hospitality and services, attracting millions of visitors annually.
+              </p>
+          </div>
+      </div>
+      
+      <div class="card">
+          <div class="card-header">
+              <h2>Fortaleza-CE</h2>
+          </div>
+          <div class="card-body">
+              <p>
+                Fortaleza, the capital of Ceará, is known for its beautiful beaches,
+                warm climate, rich Northeastern culture, and vibrant nightlife. 
+                Popular destinations include Praia do Futuro and Beach Park.
+              </p>
+          </div>
+      </div>
+      
+      <div class="card" id="business-chamber">
+          <div class="card-header">
+              <h2>Fortaleza Hub Commerce</h2>
+          </div>
+          <div class="card-body">
+              <p>
+                The Hub Commerce is a business chamber focused on fostering collaboration
+                and unity among companies in Fortaleza. It offers networking opportunities,
+                business resources, and advocates for the interests of its members.
+              </p>
+          </div>
+      </div>
+  </aside>
+  <div class="main-cards" id="photos">
+      
+      <div class="card card-body">
+          <img src="images/fortaleza-2.jpg" alt="Nautico Beach" loading="lazy"
+               width="350"
+               height="233">
+          <img src="images/fortaleza-3.jpg" alt="Beach Pack Water Park" loading="lazy"
+               width="350"
+               height="232">
+          <img src="images/fortaleza-4.jpg" alt="England Brigde" loading="lazy"
+               width="350"
+               height="233">
+          <img src="images/fortaleza-5.webp" alt="Iracema Beach" loading="lazy"
+               width="350"
+               height="263">
+          <img src="images/fortaleza-6.jpg" alt="Meireles Neighbor" loading="lazy"
+               width="350"
+               height="233">
+          <img src="images/fortaleza-7.jpg" alt="Buildings in Fortaleza" loading="lazy"
+               width="350"
+               height="233">
+      </div>
+  </div>
+</main>
+<footer>
+  <div id="address-contact">
+      <p><strong>Hub Commerce</strong></p>
+      <p>Fortaleza - CE</p>
+      <p>Email: <a href="mailto:contact@hubcommerce.com">contact@hubcommerce.com</a></p>
+  </div>
+
+  <div id="legal">
+    <div id="social-media">
+      <a href="#" target="_blank" ><img src="./images/facebook-icon.svg" alt="Facebook"
+              loading="lazy" width="35" height="35"></a>
+      <a href="#" target="_blank" ><img src="./images/x-icon.svg" alt="X" loading="lazy"
+              width="35" height="35"></a>
+      <a href="#" target="_blank" ><img src="./images/instagram-icon.svg" alt="Instagram"
+              loading="lazy" width="35" height="35"></a>
+  </div>
+      <p>&copy; <span id="currentYear"></span> Hub Commerce</p>
+      <p><span id="lastModified"></span></p>
+  </div>
+</footer>
+</body>
+</html>
