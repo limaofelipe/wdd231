@@ -1,4 +1,4 @@
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 900px) and (max-width: 1280px) {
 
 body{
   font-family: "Poppins", sans-serif;
@@ -9,6 +9,7 @@ header {
     display: flex;
     justify-content: space-around;
     background-color: var(--black);
+    height: 5rem;
 }
 
 #logo h1 {
@@ -31,10 +32,7 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
-}
-
-nav a:first-child {
-    padding-top: 10px;
+    font-size: 1rem;
 }
 
 #menu {
@@ -45,6 +43,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: var(--header-height);
 }
 
 body {
@@ -55,8 +54,60 @@ body {
 
 main {
     flex: 1;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    max-width: 1217px;
+    margin: 0 auto; 
+}
+.flex {
+    flex-direction: row;
+  }
+
+#cards-section{
+  grid-template-columns: 1fr 1fr ;
 }
 }
+
+@media only screen and (min-width: 1280px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--black);
+    height: 5rem;
+  }
+
+  #logo h1 {
+    color: var(--soft-blue);
+  }
+
+  nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: var(--soft-blue);
+  }
+
+  nav.collapsed {
+      max-height: 100%;
+      opacity: 100%;
+  }
+
+  nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 1rem;
+  }
+
+  #menu {
+      display: none;
+  }
+
+  .flex {
+    flex-direction: row;
+  }
+
+  #cards-section {
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+

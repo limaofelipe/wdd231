@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Smartphone X200",
+    "description": "Powerful processor with high-resolution display and camera.",
+    "price": "699.99",
+    "image": "./images/products/Smartphone-X200.jpeg"
+  },
+  {
+    "name": "Bluetooth Headphones Pro",
+    "description": "Noise-canceling wireless headphones with deep bass.",
+    "price": "149.99",
+    "image": "./images/products/Bluetooth-Headphones-Pro.jpg"
+  },
+  {
+    "name": "4K Ultra HD Smart TV",
+    "description": "65-inch screen with 4K resolution and streaming apps.",
+    "price": "899.99",
+    "image": "./images/products/4K-Ultra-HD-SmartTV.webp"
+  },
+  {
+    "name": "Gaming Laptop GX15",
+    "description": "High-performance laptop with RTX graphics card.",
+    "price": "1299.99",
+    "image": "./images/products/Gaming-Laptop-GX15.webp"
+  },
+  {
+    "name": "Wireless Mouse Pro",
+    "description": "Ergonomic design with customizable buttons.",
+    "price": "29.99",
+    "image": "./images/products/Wireless-Mouse-Pro.jpg"
+  },
+  {
+    "name": "Mechanical Keyboard RGB",
+    "description": "Customizable RGB lighting and mechanical switches.",
+    "price": "79.99",
+    "image": "./images/products/Mechanical-Keyboard-RGB.jpg"
+  },
+  {
+    "name": "Smartwatch Z10",
+    "description": "Tracks health metrics and notifications on wrist.",
+    "price": "199.99",
+    "image": "./images/products/Smartwatch-Z10.png"
+  },
+  {
+    "name": "Portable Speaker Max",
+    "description": "Waterproof Bluetooth speaker with powerful sound.",
+    "price": "99.99",
+    "image": "./images/products/Portable-Speaker-Max.jpg"
+  },
+  {
+    "name": "Tablet 10 Pro",
+    "description": "10-inch screen perfect for work and entertainment.",
+    "price": "499.99",
+    "image": "./images/products/Tablet-10-Pro.png"
+  },
+  {
+    "name": "Wireless Charger Pad",
+    "description": "Fast wireless charging pad for all devices.",
+    "price": "39.99",
+    "image": "./images/products/Wireless-Charger-Pad.jpg"
+  },
+  {
+    "name": "Home Security Camera",
+    "description": "1080p video, night vision, and motion detection.",
+    "price": "79.99",
+    "image": "./images/products/Home-Security-Camera.jpg"
+  },
+  {
+    "name": "External Hard Drive 2TB",
+    "description": "High-speed USB drive with 2TB storage capacity.",
+    "price": "89.99",
+    "image": "./images/products/External-Hard-Drive-2TB.jpg"
+  },
+  {
+    "name": "Drone Air 300",
+    "description": "Compact drone with 4K camera and GPS tracking.",
+    "price": "299.99",
+    "image": "./images/products/Drone-Air-300.webp"
+  },
+  {
+    "name": "Virtual Reality Headset",
+    "description": "Immersive VR experience with motion tracking.",
+    "price": "399.99",
+    "image": "./images/products/Virtual-Reality-Headset.jpg"
+  },
+  {
+    "name": "Smart Home Assistant",
+    "description": "Voice-controlled assistant with smart home integration.",
+    "price": "49.99",
+    "image": "./images/products/Smart-Home-Assistant.webp"
+  },
+  {
+    "name": "Noise Cancelling Earbuds",
+    "description": "Wireless earbuds with superior noise cancellation.",
+    "price": "129.99",
+    "image": "./images/products/Noise-Cancelling-Earbuds.webp"
+  },
+  {
+    "name": "Electric Scooter Model S",
+    "description": "Lightweight electric scooter with long battery life.",
+    "price": "499.99",
+    "image": "./images/products/Electric-Scooter-ModelS.webp"
+  },
+  {
+    "name": "Action Camera Xtreme",
+    "description": "Durable camera for capturing outdoor adventures.",
+    "price": "199.99",
+    "image": "./images/products/Action-Camera-Xtreme.jpg"
+  },
+  {
+    "name": "Wireless Soundbar System",
+    "description": "Soundbar with wireless subwoofer for deep bass.",
+    "price": "249.99",
+    "image": "./images/products/Wireless-Soundbar-System.webp"
+  },
+  {
+    "name": "Smart Refrigerator 400L",
+    "description": "Wi-Fi enabled fridge with touch screen interface.",
+    "price": "1499.99",
+    "image": "./images/products/Smart-Refrigerator-400L.webp"
+  }
+]

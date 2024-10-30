@@ -1,10 +1,20 @@
+  :root {
+  --header-height: 3.5rem;
 
-   :root {
+  
   --blue: #003CFE;
   --soft-blue: #E5F3FF;
   --black: #000C33;
   --green: #00CC73;
-  }
+
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+
+}
 
 
 html {
@@ -33,7 +43,7 @@ header {
   align-items: center;
   background-color: var(--black);
   color: var(--soft-blue);
-}
+  }
 
 #logo {
   display: flex;
@@ -75,10 +85,6 @@ nav a {
   padding: 10px;
 }
 
-nav a:first-child {
-  padding-top: 20px;
-}
-
 nav a:hover {
   color: var(--green);
 }
@@ -99,13 +105,162 @@ nav.collapsed {
   opacity: 0;
 }
 
-   footer {
-    background-color: var(--black);
-    color: var(--soft-blue);
-    padding: 1rem;  
-  }
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
 
-  footer a{
-    color: var(--soft-blue);
-  }
+.section {
+  margin-top: var(--header-height);
+  padding-inline: 1rem;
+  max-width: 1217px;
+  margin-inline: auto;
+}
+
+.section .title{
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+
+#home .image  {
+  border-radius: 8px;
+  width: 37rem;
+  height: 24rem;
+}
+
+#home .text h1 {
+  margin-bottom: 1rem;
+}
+
+#home .text p {
+  margin-bottom: 2rem;
+}
+
+#home .image {
+  order: 1;
+}
+
+#home .text{
+  order: 0;
+  max-width: 24rem;
+  text-align: left;
+}
+
+.button {
+  background-color: var(--blue);
+  color: var(--soft-blue);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: var(--green);
+}
+
+#cards-section {
+  display: grid;
+  grid-template-columns: 1fr ;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.card img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 8px;
+}
+
+.card h3,
+.card p {
+  margin-block: 0.5rem;
+  
+}
+
+#contact-form > h2 {
+  background: var(--accent-color);
+  border-radius: 10px 10px 0 0;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+#contact-form > form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#contact-form form input,
+#contact-form form select,
+#contact-form form textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-border);
+}
+
+#contact-form form textarea {
+  height: 5rem;
+}
+
+/* Submit Button Styles */
+#contact-form form input[type="submit"] {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--blue);
+  background: var(--white);
+  color: var(--blue);
+  transition: background 0.3s;
+}
+
+/* Submit Button Hover and Active States */
+#contact-form form input[type="submit"]:hover {
+  background: var(--blue);
+  color: white;
+}
+
+#contact-form form input[type="submit"]:active {
+  background: var(--black);
+  color: white;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--soft-blue);
+  padding: 1rem;  
+  margin-top: 1rem;
+}
+
+footer a{
+color: var(--soft-blue);
+}
+
+
 
